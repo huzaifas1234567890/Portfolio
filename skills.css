@@ -1,0 +1,95 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0A0F0D;
+    color: white;
+}
+header{
+    display: flex;
+    background-color: #1E2D24;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navlink .link{
+    font-size: 18px;
+    color: #00FF84	;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 35px;
+    transition: 0.3s;
+}
+.contact{
+    border-radius: 25px;
+    border:2px solid #124C3D ;
+    width: 125px;
+    height: 35px;
+    background:#00FF84;
+    color: #0A0F0D;
+    display: inline-flex;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.contact:hover{
+    color: #0A0F0D;
+    background-color: #00CC66;
+    background: none;
+}
+.navlink a:hover{
+    color: #00CC66;
+}
+.navlink a.active{
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 35px;
+}
+main{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.home-content{
+    max-width: 750px;
+    margin-right: 30px;
+    margin-top: 150px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: #00FF84;
+
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #FFD700;
+}
+.home-content p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 40px;
+    line-height: 25px;
+}
