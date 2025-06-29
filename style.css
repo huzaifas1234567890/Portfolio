@@ -117,6 +117,14 @@ main{
     display: flex;
     justify-content: space-between;
 }
+.icons {
+  position: absolute;
+  bottom: 100px;
+  left: 10%;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
 .icons a{
     display: inline-flex;
     justify-content: center;
@@ -151,4 +159,106 @@ main{
     top: 20px;
     right: 30px;
     height: 100%;
+}
+/* ===== FINAL RESPONSIVE MEDIA QUERY ===== */
+
+@media (max-width: 991px) {
+  /* Header becomes vertical */
+  header {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navlink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navlink a {
+    margin: 0 !important;
+  }
+
+  .contact {
+    margin-left: 0;  /* Align Contact button with nav */
+    margin-top: 5px;
+  }
+
+  /* Main layout becomes vertical */
+  main {
+    flex-direction: column;
+    height: auto;
+    padding-top: 140px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .home-content {
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  /* Image adapts to smaller screen */
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image .image-box {
+    width: 60vw;
+    height: 60vw;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .image .image-box img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Icons move to bottom of page */
+  .icons {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h3 {
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .image .image-box {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
 }

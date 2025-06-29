@@ -86,3 +86,60 @@ main{
     margin: 20px 0 40px;
     line-height: 25px;
 }
+/* ===== Responsive Design for About Page ===== */
+
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navlink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navlink a {
+    margin: 0 !important;
+  }
+
+  .contact {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  main {
+    flex-direction: column;
+    height: auto;
+    padding: 140px 20px 60px;
+    text-align: center;
+  }
+
+  .home-content {
+    margin-right: 0;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
