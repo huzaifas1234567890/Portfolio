@@ -199,3 +199,35 @@ address{
     font-size: 18px;
   }
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .navlink {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  main {
+    padding-top: 160px; /* Adjust based on actual navbar height after wrapping */
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+  }
+
+  .icons {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+}
