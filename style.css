@@ -86,7 +86,7 @@ main{
 }
 .home-content p{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 20px 0 40px;
     line-height: 25px;
 }
@@ -161,6 +161,15 @@ main{
     height: 100%;
 }
 /* ===== FINAL RESPONSIVE MEDIA QUERY ===== */
+
+@media (min-width: 992px) {
+    .icons {
+      bottom: 30px;
+  }
+  .home-content{
+    padding-top: 60px;
+  }
+}
 
 @media (max-width: 991px) {
   /* Header becomes vertical */
